@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<p>Регистрация</p>
+
+		<input  class = "container" type="button" onClick="Theme()">
+	</header>
+	<section class="wrapper">
+		<article id=regWind>
+			<label for="">Имя <input type="text"  class="regInputs" id="userName"></label>
+			<label for="">Пароль<input type="text"  class="regInputs" placeholder="" id="userPassword"></label>
+			<label for="">email<input type="email"  class="regInputs" placeholder="example@mail.ru" id="email"></label>			
+			<form >
+				<input type="button" value="Отправить" onClick="sendJson()"/>
+			</form>
+			<div>
+				<div id="messName"></div>
+				<div id="messPass"></div>
+				<div id="messEmail"></div>
+			</div>
+		</article>
+		<div id="output"></div>
+	</section>
+	<footer>
+	</footer>
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>
